@@ -1,0 +1,23 @@
+doctype html 
+html(lang="en")
+    head 
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Yoom 
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body 
+        header 
+            h1 Yoom 
+        main 
+            form#nick 
+                input(type="text", placeholder="choose a nickname", required)
+                button Save
+            form#message
+                input(type="text", placeholder="write a msg", required)
+                button Send
+            ul 
+        script(src="/public/js/app.js")
+
+
+// pug는 위와 같이 js를 통해서 html을 생성해서(서버에서) 클라이언트로 보낼 수 있고, 이를 렌더링할 수 있다.
